@@ -16,7 +16,6 @@ import com.lowagie.text.Rectangle;
 import com.lowagie.text.Table;
 import com.lowagie.text.alignment.HorizontalAlignment;
 import com.lowagie.text.alignment.VerticalAlignment;
-import com.lowagie.text.pdf.PdfCell;
 import com.lowagie.text.pdf.PdfDocument;
 import com.lowagie.text.pdf.PdfWriter;
 
@@ -157,6 +156,7 @@ public class OpenPDFSample {
         
         // Dokument schließen
         document.close();
+        pdf.close();
     }
 
     public static Path getTMPFile() {

@@ -43,7 +43,7 @@ public class OpenPDFSample {
     
     private static void createPDF() throws Exception {
         // Erstellen eines neuen Dokuments
-       Document document = new Document();
+        Document document = new Document();
         PdfDocument pdf = new PdfDocument();
         pdf.addWriter(PdfWriter.getInstance(document, Files.newOutputStream(FILE_OPENPDF)));
         pdf.setDocumentLanguage("de_DE");

@@ -155,8 +155,12 @@ public class OpenPDFSample {
         }
         
         // Dokument schließen
-        document.close();
-        pdf.close();
+        try {
+            document.close();
+            pdf.close();
+        } catch (Exception e) {
+            System.err.println(e);
+        }
     }
 
     public static Path getTMPFile() {
